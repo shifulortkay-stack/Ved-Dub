@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnAddVideo"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Video qo‘shish" />
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ovoz yozish" />
+
+        <Button
+            android:id="@+id/btnSrt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SRT qo‘shish" />
+
+        <Button
+            android:id="@+id/btnRemoveSrt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SRT ni o‘chirish" />
+    </LinearLayout>
+</LinearLayout>
